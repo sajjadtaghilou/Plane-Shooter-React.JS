@@ -42,7 +42,7 @@ export default class Header extends React.Component {
                         undefined
                 }
                 <div className="title">
-                    <h3>Sky Shooter</h3>
+                    <h3>Shooter</h3>
                 </div>
                 {this.state.playerName ?
                     (
