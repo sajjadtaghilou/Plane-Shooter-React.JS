@@ -4,7 +4,7 @@
 
 To start clone the repo and run
 ```
-cd sky-shooter
+cd shooter
 npm install
 npm start
 ```
