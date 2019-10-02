@@ -1,4 +1,4 @@
-# Sky-shooter
+# shooter
 
 ## The ol' space-shooter game, built in ReactJS.
 
