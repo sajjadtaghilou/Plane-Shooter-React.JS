@@ -17,7 +17,22 @@ class App extends Component {
 	}
 
 	checkLogin() {
-	
+		let currentLocation = this.props.router.getCurrentLocation().pathname;
+		// console.log(currentLocation);
+		localforage.getItem('playerName')
+			.then((value) => {
+				if (value !== null && value !== "") {
+					// console.log("PlayerName set in storage as: ", value);
+					if (currentLocation === "/") {
+						browserHistory.push("/gameplay");
+					}
+				}
+			}).catch((err) => {
+				console.log("PlayerName not set");
+				if (currentLocation === "/gameplay") {
+					browserHistory.push("/");
+				}
+			})
 	}
 
 	render() {
