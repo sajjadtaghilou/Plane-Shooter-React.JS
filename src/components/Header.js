@@ -20,16 +20,6 @@ export default class Header extends React.Component {
         }
     }
 
-    logout() {
-        localforage.clear()
-            .then(() => {
-                console.log("Logout successful");
-            }).catch((err) => {
-                console.log("Error while clearing localforage", err);
-            })
-        browserHistory.push("/");
-    }
-
     render() {
         return (
             <div className="titleBar">
