@@ -39,24 +39,6 @@ export default class Main extends React.Component {
 
     }
 
-    checkPlayerName() {
-        // console.log("In CheckPlayerName");
-        localforage.getItem('playerName')
-            .then((playerName) => {
-                if (!playerName || playerName === null || playerName === "") {
-                    console.log("Invalid PlayerName");
-                    browserHistory.push("/");
-                } else {
-                    this.setState({ playerName });
-                }
-            })
-            .catch((err) => {
-                console.log("Error while getting playerName : ", err);
-                browserHistory.push("/");
-            });
-
-    }
-
     componentDidMount() {
         this.checkPlayerName();
         this.fire();
