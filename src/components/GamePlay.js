@@ -72,10 +72,10 @@ export default class Main extends React.Component {
     }
 
     fire() {
-        setInterval(() => {
-            if (!this.state.pause)
-                 this.generateBullet();
-        }, bulletThrowInterval);
+        // setInterval(() => {
+        //     if (!this.state.pause)
+        //         this.generateBullet();
+        // }, bulletThrowInterval);
 
         setInterval(() => {
             if (!this.state.pause)
@@ -267,7 +267,7 @@ export default class Main extends React.Component {
 
     renderPlayButton() {
         if (!this.state.gameOver) {
-            if (this.state.pause) {
+            if (!this.state.pause) {
                 return <span>Play</span>;
             } else {
                 return <span>Pause</span>;
