@@ -301,9 +301,10 @@ export default class Main extends React.Component {
             this.gamePause();
         }
         else if (!this.state.pause) {
+            // Space
             if (event.which === 32) {
                 this.generateBullet();
-            }
+            }//b
             if (event.which === 98) {
                 // "B" key was pressed to release Blaster
                 this.releaseBlaster();
