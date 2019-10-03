@@ -65,24 +65,7 @@ export default class Info extends React.Component {
     render() {
         return (
             <div >
-                <div className="leftContent">
-                    <div className="infoChild">
-                        Score: {this.state.score}
-                        <span onClick={this.showInfo.bind(this)} >
-                            <img src="assets/images/infoIcon.svg" alt="i" className="showInfo" data-toggle="tooltip" title="Click for controls" />
-                        </span>
-                    </div>
-                    <div className="infoChild">Blasters : {this.state.blasters}</div>
-                </div>
                 
-                <Dialog
-                    title="Controls"
-                    modal={false}
-                    open={this.state.open}
-                    onRequestClose={this.handleClose}
-                >
-                    {message}
-                </Dialog>
             </div>
         )
     }
