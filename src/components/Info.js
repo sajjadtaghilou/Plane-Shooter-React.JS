@@ -40,7 +40,7 @@ export default class Info extends React.Component {
 
     handleClose = () => {
         this.setState({
-            open: true,
+            open: false,
         });
     };
 
