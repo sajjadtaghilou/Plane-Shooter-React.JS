@@ -256,11 +256,11 @@ export default class Main extends React.Component {
         console.log("GamePause called");
         if (!this.state.gameOver) {
             this.setState({
-                pause: this.state.pause,
+                pause: !this.state.pause,
             })
         } else {
             this.setState({
-                pause: false
+                pause: true
             });
         }
     }
@@ -348,4 +348,3 @@ export default class Main extends React.Component {
 
 
 
-if (!this.state.pause)
