@@ -20,6 +20,9 @@ const styles = {
     floatingLabelFocusStyle: {
         color: blue500,
     },
+      input: {
+        color: white,
+      }
 };
 
 export default class GameStart extends React.Component {
@@ -55,7 +58,7 @@ export default class GameStart extends React.Component {
         return (
             <div className="main">
                 <Header />
-                <div className="content" backgroundColor="blue500" >
+                <div className="content" >
                     <form onSubmit={this.submit.bind(this)}>
                         <TextField
                             floatingLabelText="Name"
