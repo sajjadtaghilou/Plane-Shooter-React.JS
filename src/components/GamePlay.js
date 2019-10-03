@@ -267,7 +267,6 @@ export default class Main extends React.Component {
 
     renderPlayButton() {
         if (!this.state.gameOver) {
-            (!this.state.Info){
             if (this.state.pause) {
                 return <span>Play</span>;
             } else {
@@ -276,7 +275,7 @@ export default class Main extends React.Component {
         } else {
             return <span>Restart</span>;
         }
-    }}
+    }
 
     releaseBlaster() {
         let { numberOfBlasters } = this.state;
@@ -319,7 +318,7 @@ export default class Main extends React.Component {
                 <div className="main">
                     <div className="gameRegion" ref="gameRegion" onMouseMove={this.mouseMove.bind(this)}>
                         <div key="gameRegionDiv" style={{ position: "relative" }}>
-                            <Info key="infoComponent" score={this.state.score} lives={this.state.lives} pause={this.state.pause} blasters={this.state.numberOfBlasters} />
+                            <Info key="infoComponent" score={this.state.score} pause={this.state.pause} blasters={this.state.numberOfBlasters} />
                             {this.renderEnemies()}
                             {this.renderBullets()}
                         </div>
@@ -345,3 +344,8 @@ export default class Main extends React.Component {
         )
     }
 }
+
+
+
+
+if (!this.state.pause)
