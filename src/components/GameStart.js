@@ -64,7 +64,7 @@ export default class GameStart extends React.Component {
                             onChange={(event) => { this.setState({ name: event.target.value.trim() }) }}
                         />
                         <br />
-                        <FlatButton label="Enter" onClick={this.submit.bind(this)} />
+                        <FlatButton backgroundColor="white" label="Enter" onClick={this.submit.bind(this)} />
                     </form>
                 </div>
             </div>
