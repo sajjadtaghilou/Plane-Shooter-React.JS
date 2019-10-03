@@ -72,10 +72,10 @@ export default class Main extends React.Component {
     }
 
     fire() {
-        // setInterval(() => {
-        //     if (!this.state.pause)
-        //         this.generateBullet();
-        // }, bulletThrowInterval);
+        setInterval(() => {
+            if (!this.state.pause)
+                 this.generateBullet();
+        }, bulletThrowInterval);
 
         setInterval(() => {
             if (!this.state.pause)
