@@ -295,6 +295,7 @@ export default class Main extends React.Component {
     }
 
     keyPress(event) {
+        if (!this.state.pause) {
         this.setState({ snackBarOpen: false });
         if (event.which === 13) {
             // SpaceBar was pressed
@@ -309,7 +310,7 @@ export default class Main extends React.Component {
                 this.releaseBlaster();
             }
         }
-    }
+    }}
 
     render() {
         return (
