@@ -15,7 +15,7 @@ const styles = {
         borderColor: orange500,
     },
     floatingLabelStyle: {
-        color: amber400,
+        color: orange500,
     },
     floatingLabelFocusStyle: {
         color: blue500,
