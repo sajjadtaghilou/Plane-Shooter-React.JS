@@ -46,7 +46,7 @@ export default class Info extends React.Component {
 
     showInfo() {
         this.setState({
-            open: true,
+            open: false,
         })
     }
 
