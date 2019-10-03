@@ -18,7 +18,7 @@ export default class Main extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            pause: true,
+            pause: false,
             playerStyle: {
                 left: 0
             },
