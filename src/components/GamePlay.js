@@ -256,7 +256,7 @@ export default class Main extends React.Component {
         console.log("GamePause called");
         if (!this.state.gameOver) {
             this.setState({
-                pause: this.state.pause,
+                pause: !this.state.pause,
             })
         } else {
             this.setState({
@@ -267,7 +267,7 @@ export default class Main extends React.Component {
 
     renderPlayButton() {
         if (!this.state.gameOver) {
-            if (!this.state.pause) {
+            if (this.state.pause) {
                 return <span>Play</span>;
             } else {
                 return <span>Pause</span>;
