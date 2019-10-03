@@ -57,7 +57,7 @@ export default class GameStart extends React.Component {
                 <Header />
                 <div className="content" >
                     <form onSubmit={this.submit.bind(this)}>
-                        <TextField className = "textfield"
+                        <TextField
                             floatingLabelText="Name"
                             floatingLabelStyle={styles.floatingLabelStyle}
                             floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
