@@ -40,7 +40,7 @@ export default class Info extends React.Component {
 
     handleClose = () => {
         this.setState({
-            open: false,
+            open: true,
         });
     };
 
@@ -80,7 +80,7 @@ export default class Info extends React.Component {
                 </div>
                 <Dialog
                     title="Controls"
-                    modal={true}
+                    modal={false}
                     open={this.state.open}
                     onRequestClose={this.handleClose}
                 >
