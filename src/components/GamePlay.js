@@ -267,6 +267,7 @@ export default class Main extends React.Component {
 
     renderPlayButton() {
         if (!this.state.gameOver) {
+            
             if (this.state.pause) {
                 return <span>Play</span>;
             } else {
