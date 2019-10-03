@@ -267,7 +267,7 @@ export default class Main extends React.Component {
 
     renderPlayButton() {
         if (!this.state.gameOver) {
-            
+            (!this.state.Info){
             if (this.state.pause) {
                 return <span>Play</span>;
             } else {
@@ -276,7 +276,7 @@ export default class Main extends React.Component {
         } else {
             return <span>Restart</span>;
         }
-    }
+    }}
 
     releaseBlaster() {
         let { numberOfBlasters } = this.state;
