@@ -17,4 +17,17 @@
     align-items: center;
     justify-content: center;
     margin: auto;
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        background-color: #3CBC8D;
+        color: white;
+      }
+      .textfield {
+        background-color: rgb(255, 255, 255);
+        color: green;
+    }
 }
