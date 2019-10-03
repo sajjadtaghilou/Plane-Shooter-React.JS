@@ -4,6 +4,7 @@
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+    color: green;
 }
 
 .content{
@@ -16,6 +17,7 @@
     align-items: center;
     justify-content: center;
     margin: auto;
+    color: green;
 }
 .textfield {
     background-color: #000;
