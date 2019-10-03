@@ -22,7 +22,7 @@ const styles = {
     },
       input: {
         color: white,
-      }
+      },
 };
 
 export default class GameStart extends React.Component {
@@ -61,7 +61,10 @@ export default class GameStart extends React.Component {
                 <div className="content" >
                     <form onSubmit={this.submit.bind(this)}>
                         <TextField 
-                            InputProps={{className: classes.input}}
+                            className={classes.root}
+                            InputProps={{
+                            className: classes.input
+                            }}
                             floatingLabelText="Name"
                             floatingLabelStyle={styles.floatingLabelStyle}
                             floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
