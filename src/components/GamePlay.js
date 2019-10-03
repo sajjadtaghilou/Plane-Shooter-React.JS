@@ -256,11 +256,11 @@ export default class Main extends React.Component {
         console.log("GamePause called");
         if (!this.state.gameOver) {
             this.setState({
-                pause: !this.state.pause,
+                pause: this.state.pause,
             })
         } else {
             this.setState({
-                pause: true
+                pause: false
             });
         }
     }
@@ -318,7 +318,7 @@ export default class Main extends React.Component {
                 <div className="main">
                     <div className="gameRegion" ref="gameRegion" onMouseMove={this.mouseMove.bind(this)}>
                         <div key="gameRegionDiv" style={{ position: "relative" }}>
-                            <Info key="infoComponent" score={this.state.score} pause={this.state.pause} blasters={this.state.numberOfBlasters} />
+                            <Info key="infoComponent" score={this.state.score} lives={this.state.lives} pause={this.state.pause} blasters={this.state.numberOfBlasters} />
                             {this.renderEnemies()}
                             {this.renderBullets()}
                         </div>
