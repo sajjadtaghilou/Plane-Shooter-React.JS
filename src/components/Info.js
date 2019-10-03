@@ -19,7 +19,7 @@ export default class Info extends React.Component {
             open: true,
             score: this.props.score,
             lives: this.props.lives,
-            
+            pause: this.props.pause,
             blasters: this.props.blasters,
             livesImage: this.showLives(this.props.lives)
         }
@@ -31,7 +31,7 @@ export default class Info extends React.Component {
             this.setState({
                 score: newProps.score,
                 lives: newProps.lives,
-                
+                pause: newProps.pause,
                 blasters: newProps.blasters,
                 livesImage: this.showLives(newProps.lives),
             })
@@ -73,6 +73,10 @@ export default class Info extends React.Component {
                         </span>
                     </div>
                     <div className="infoChild">Blasters : {this.state.blasters}</div>
+                </div>
+                <div className="rightContent">
+                    <div className="infoLives"> {this.state.livesImage} </div>
+                    {this.state.pause ? <div>Press 'Enter' to Play</div> : undefined}
                 </div>
                 <Dialog
                     title="Controls"
