@@ -19,7 +19,7 @@ export default class Info extends React.Component {
             open: true,
             score: this.props.score,
             lives: this.props.lives,
-            pause: this.props.pause,
+            
             blasters: this.props.blasters,
             livesImage: this.showLives(this.props.lives)
         }
