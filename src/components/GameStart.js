@@ -28,6 +28,7 @@ export default class GameStart extends React.Component {
         this.state = {
             name: "",
             errorText: ""
+            
         }
     }
     submit(e) {
@@ -54,7 +55,7 @@ export default class GameStart extends React.Component {
         return (
             <div className="main">
                 <Header />
-                <div className="content">
+                <div className="content" backgroundColor="blue500" >
                     <form onSubmit={this.submit.bind(this)}>
                         <TextField
                             floatingLabelText="Name"
