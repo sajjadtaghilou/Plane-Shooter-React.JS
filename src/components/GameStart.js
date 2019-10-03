@@ -61,6 +61,7 @@ export default class GameStart extends React.Component {
                             style={styles.floatingLabelStyle}
                             textareaStyle={styles.floatingLabelStyle}
                             type={styles.floatingLabelStyle}
+                            hintText={styles.floatingLabelStyle}
                             floatingLabelText="Name"
                             floatingLabelStyle={styles.floatingLabelStyle}
                             floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
