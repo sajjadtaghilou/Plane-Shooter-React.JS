@@ -8,4 +8,4 @@ cd exercise 4
 npm install
 npm start
 ```
-To visit the live version of the app, visit https://www.exercise4.sajjadtaghilou.com/. 
+To visit the live version of the app, visit https://www.exercise-4.sajjadtaghilou.com/
